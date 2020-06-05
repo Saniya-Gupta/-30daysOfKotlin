@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/favourites"
+        android:id="@+id/action_favList"
+        android:icon="@drawable/ic_fav_white"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:title="@string/games"
+        android:id="@+id/action_games"
+        android:icon="@drawable/dice_4"
+        app:showAsAction="ifRoom"/>
+
+</menu>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="statusY">Y\'s turn - Tap to Play</string>
+    <string name="statusX">X\'s turn - Tap to play</string>
+    <string name="tie">Tie</string>
+    <string name="x_has_won">X has won</string>
+    <string name="y_has_won">Y has won</string>
+    <string name="desc_img_grid">imgGrid</string>
+    <string name="desc_img_x_zero">imgPlayerTap</string>
+    <string name="replay">Replay</string>
+    <string name="roll">Roll</string>
+    <string name="clear">Clear and Restart</string>
+    <string name="desc_img_favourite">Favourite</string>
+    <string name="desc_img_comic">imgComic</string>
+    <string name="open_drawer">Open Drawers</string>
+    <string name="close_drawer">Close drawers</string>
+    <string name="favourites">Favourites</string>
+    <string name="dice_roller">Dice Roller</string>
+    <string name="tic_tac_toe">Tic-Tac-Toe</string>
+    <string name="comics">Comics</string>
+    <string name="read">Read</string>
+    <string name="games">Games</string>
+</resources>
