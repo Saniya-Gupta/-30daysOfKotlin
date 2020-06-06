@@ -53,8 +53,6 @@ class ComicDashboardFragment: Fragment() {
 
     lateinit var recyclerAdapter: ComicDashboardRecyclerAdapter
 
-    lateinit var progressLayout: RelativeLayout
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -68,17 +66,12 @@ class ComicDashboardFragment: Fragment() {
 
         layoutManager = LinearLayoutManager(activity)
 
-        progressLayout = view.findViewById(R.id.progressLayout)
 
         // Send data to adapter
         recyclerAdapter =
             ComicDashboardRecyclerAdapter(activity as Context, comicInfoList)
         recyclerComic.adapter = recyclerAdapter
         recyclerComic.layoutManager = layoutManager
-
-        Handler().postDelayed({
-            progressLayout.visibility = View.GONE
-        },2000)
 
         return view
     }

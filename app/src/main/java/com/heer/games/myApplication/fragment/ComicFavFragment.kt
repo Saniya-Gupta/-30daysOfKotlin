@@ -23,7 +23,6 @@ class ComicFavFragment : Fragment() {
     private lateinit var recyclerFav: RecyclerView
     private lateinit var layoutManager: RecyclerView.LayoutManager
     private lateinit var recyclerAdapter : ComicFavRecyclerAdapter
-    lateinit var progressLayout: RelativeLayout
 
 
     override fun onCreateView(
@@ -34,11 +33,6 @@ class ComicFavFragment : Fragment() {
         setHasOptionsMenu(false)
         recyclerFav = view.findViewById(R.id.recyclerComic)
         layoutManager = LinearLayoutManager(activity)
-        progressLayout = view.findViewById(R.id.progressLayout)
-
-        Handler().postDelayed({
-            progressLayout.visibility = View.GONE
-        },2000)
 
         val favComicList = DbAsyncTask(activity as Context).execute().get()
 
